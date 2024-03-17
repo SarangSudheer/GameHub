@@ -29,7 +29,7 @@ header{
     margin-left: 20px;
 }
 
-.navigation .signUp{
+.navigation > button{
     width: 5em;
     height: 2.2em;
     font-size: 1.1em;
@@ -42,7 +42,7 @@ header{
     transition: 0.5s;
 }
 
-.navigation .signUp:hover{
+.navigation > button:hover{
     background-color: rgb(10, 12, 133);
     color: white;
 }
@@ -73,10 +73,10 @@ body{
     height: 100vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center; 
-
+    gap: 30px;
 }
 
 .form_box{
@@ -103,6 +103,7 @@ body{
     width: 100%;
     position: relative;
     line-height: 50px;
+    text-align: center;
 }
 .form_input input{
     background-color: transparent;
@@ -114,7 +115,7 @@ body{
 
 .form_input label{
     position: absolute;
-    left: 0px;
+    left: 5px;
     font-size: 1em;
     pointer-events: none;
     transition: 0.5s;
@@ -128,18 +129,18 @@ body{
 }
 
 
-button{
+.form_input button{
     text-align: center;
     background-color: transparent;
     outline: none;
     border-radius: 20px;
     border: 2px solid black;
     font-size: 1em;
-    width: 50%;
+    width: 80%;
     margin-top: 10px;
 }
 
-button:hover{
+.form_input button:hover{
     background-color: black;
     color: white;
 }
@@ -155,4 +156,50 @@ button:hover{
 
 .other a:hover{
 color: blue;
+}
+
+
+#registered_box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#registered_box > div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5em;
+    border-radius: 20px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.897);
+}
+
+#registered_box > div > button{
+    width: 5em;
+    height: 2.2em;
+    font-size: 1.1em;
+    color: rgb(10, 12, 133);
+    outline: none;
+    background-color: transparent;
+    border: 2px solid rgb(10, 12, 133);
+    border-radius: 10px;
+    margin-left: 1em;
+    transition: 0.5s;
+}
+#registered_box > div > button:hover{
+    background-color: rgb(10, 12, 133);
+    color: white;
+}
+
+img{
+    position: relative;
+    width: 60%;
+    height: 60%;
 }
